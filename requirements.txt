@@ -1,0 +1,30 @@
+# =========================================================
+# VSL Recognition System - Requirements
+# Sinh vien: Le Hoang Duong - 22T_KHDL - DUT
+# Python 3.10
+# =========================================================
+
+# --- Thu vien xu ly anh va video ---
+opencv-python==4.10.0.84
+Pillow>=10.0.0
+
+# --- MediaPipe: Trich xuat landmark ban tay ---
+mediapipe==0.10.14
+
+# --- Deep Learning ---
+tensorflow==2.16.1          # Bao gom Keras 3, ho tro CPU + GPU (CUDA 12)
+# tensorflow-gpu==2.10.0    # Dung dong nay neu dung TF2.10 voi CUDA 11.x (Windows)
+
+# --- Xu ly so lieu ---
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+
+# --- Truc quan hoa ---
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# --- Tien ich ---
+tqdm==4.66.5                # Thanh tien trinh khi xu ly du lieu
+joblib==1.4.2               # Luu/load model scikit-learn (label encoder)
+
