@@ -180,3 +180,6 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 *.mp4
+README.md
+reports/experiment_log.md
+*.npy
