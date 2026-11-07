@@ -38,12 +38,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Em",
+      "gloss": "Anh",
       "num_videos": 84,
       "num_signers": 26
     },
     {
-      "gloss": "Anh",
+      "gloss": "Em",
       "num_videos": 84,
       "num_signers": 26
     },
@@ -88,12 +88,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Cô",
+      "gloss": "Lạnh",
       "num_videos": 78,
       "num_signers": 26
     },
     {
-      "gloss": "Lạnh",
+      "gloss": "Cô",
       "num_videos": 78,
       "num_signers": 26
     },
@@ -118,11 +118,6 @@
       "num_signers": 26
     },
     {
-      "gloss": "Quạt (đứng)",
-      "num_videos": 75,
-      "num_signers": 26
-    },
-    {
       "gloss": "Máy giặt",
       "num_videos": 75,
       "num_signers": 26
@@ -133,12 +128,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Taxi",
-      "num_videos": 74,
+      "gloss": "Quạt (đứng)",
+      "num_videos": 75,
       "num_signers": 26
     },
     {
-      "gloss": "Hẹp",
+      "gloss": "Con heo",
       "num_videos": 74,
       "num_signers": 26
     },
@@ -148,18 +143,13 @@
       "num_signers": 26
     },
     {
-      "gloss": "Con heo",
+      "gloss": "Hẹp",
       "num_videos": 74,
       "num_signers": 26
     },
     {
-      "gloss": "Cái đèn",
-      "num_videos": 73,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chủ nhật",
-      "num_videos": 73,
+      "gloss": "Taxi",
+      "num_videos": 74,
       "num_signers": 26
     },
     {
@@ -168,12 +158,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Hát",
+      "gloss": "Màu vàng",
       "num_videos": 73,
       "num_signers": 26
     },
     {
-      "gloss": "Ngày Nhà giáo Việt Nam",
+      "gloss": "Cái đèn",
       "num_videos": 73,
       "num_signers": 26
     },
@@ -183,7 +173,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Màu vàng",
+      "gloss": "Chủ nhật",
       "num_videos": 73,
       "num_signers": 26
     },
@@ -198,7 +188,42 @@
       "num_signers": 26
     },
     {
+      "gloss": "Ngày Nhà giáo Việt Nam",
+      "num_videos": 73,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Hát",
+      "num_videos": 73,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Đau",
+      "num_videos": 72,
+      "num_signers": 26
+    },
+    {
       "gloss": "Chú ý",
+      "num_videos": 72,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Dì",
+      "num_videos": 72,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cái bàn",
+      "num_videos": 72,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Màu nâu",
+      "num_videos": 72,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Máy điều hòa",
       "num_videos": 72,
       "num_signers": 26
     },
@@ -213,42 +238,22 @@
       "num_signers": 26
     },
     {
-      "gloss": "Đau",
-      "num_videos": 72,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Dì",
-      "num_videos": 72,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Máy điều hòa",
-      "num_videos": 72,
-      "num_signers": 26
-    },
-    {
       "gloss": "Mùa đông",
       "num_videos": 72,
       "num_signers": 26
     },
     {
-      "gloss": "Màu nâu",
-      "num_videos": 72,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cái bàn",
-      "num_videos": 72,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Từ chối",
+      "gloss": "Tàu hỏa",
       "num_videos": 71,
       "num_signers": 26
     },
     {
-      "gloss": "Cửa sổ",
+      "gloss": "Tiếp tục",
+      "num_videos": 71,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Từ chối",
       "num_videos": 71,
       "num_signers": 26
     },
@@ -263,12 +268,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Nên",
+      "gloss": "Cửa sổ",
       "num_videos": 71,
       "num_signers": 26
     },
     {
-      "gloss": "Tàu hỏa",
+      "gloss": "Nên",
       "num_videos": 71,
       "num_signers": 26
     },
@@ -278,17 +283,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Tiếp tục",
-      "num_videos": 71,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Gió",
+      "gloss": "Thứ sáu",
       "num_videos": 70,
       "num_signers": 26
     },
     {
-      "gloss": "Bác",
+      "gloss": "Gió",
       "num_videos": 70,
       "num_signers": 26
     },
@@ -298,7 +298,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Nhạt",
+      "gloss": "Bác",
       "num_videos": 70,
       "num_signers": 26
     },
@@ -308,17 +308,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Thứ sáu",
+      "gloss": "Nhạt",
       "num_videos": 70,
       "num_signers": 26
     },
     {
-      "gloss": "Giàu",
-      "num_videos": 69,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cái chảo",
+      "gloss": "Nồi cơm điện",
       "num_videos": 69,
       "num_signers": 26
     },
@@ -328,7 +323,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Nồi cơm điện",
+      "gloss": "Giàu",
       "num_videos": 69,
       "num_signers": 26
     },
@@ -348,6 +343,16 @@
       "num_signers": 26
     },
     {
+      "gloss": "Cái chảo",
+      "num_videos": 69,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Họ hàng",
+      "num_videos": 69,
+      "num_signers": 26
+    },
+    {
       "gloss": "Bánh tét",
       "num_videos": 69,
       "num_signers": 26
@@ -358,8 +363,8 @@
       "num_signers": 26
     },
     {
-      "gloss": "Họ hàng",
-      "num_videos": 69,
+      "gloss": "Bác sĩ",
+      "num_videos": 68,
       "num_signers": 26
     },
     {
@@ -378,32 +383,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Bác sĩ",
-      "num_videos": 68,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chú",
-      "num_videos": 67,
-      "num_signers": 26
-    },
-    {
       "gloss": "Ngắn",
-      "num_videos": 67,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bà nội",
-      "num_videos": 67,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Rộng",
-      "num_videos": 67,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Sớm",
       "num_videos": 67,
       "num_signers": 26
     },
@@ -413,12 +393,27 @@
       "num_signers": 26
     },
     {
+      "gloss": "Ông nội",
+      "num_videos": 67,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bà nội",
+      "num_videos": 67,
+      "num_signers": 26
+    },
+    {
       "gloss": "Tường",
       "num_videos": 67,
       "num_signers": 26
     },
     {
-      "gloss": "Ông nội",
+      "gloss": "Sớm",
+      "num_videos": 67,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Chú",
       "num_videos": 67,
       "num_signers": 26
     },
@@ -428,28 +423,8 @@
       "num_signers": 26
     },
     {
-      "gloss": "Tháng mười",
-      "num_videos": 66,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cứng",
-      "num_videos": 66,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Lười biếng",
-      "num_videos": 66,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Đồng hồ đeo tay",
-      "num_videos": 66,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Mùa khô",
-      "num_videos": 66,
+      "gloss": "Rộng",
+      "num_videos": 67,
       "num_signers": 26
     },
     {
@@ -458,17 +433,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Cái ghế",
-      "num_videos": 66,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Rạp chiếu phim",
-      "num_videos": 66,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chơi cờ",
+      "gloss": "Đồng hồ đeo tay",
       "num_videos": 66,
       "num_signers": 26
     },
@@ -483,6 +448,46 @@
       "num_signers": 26
     },
     {
+      "gloss": "Chơi cờ",
+      "num_videos": 66,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cứng",
+      "num_videos": 66,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Mùa khô",
+      "num_videos": 66,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Quần đùi",
+      "num_videos": 66,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Tháng mười",
+      "num_videos": 66,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cái ghế",
+      "num_videos": 66,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Lười biếng",
+      "num_videos": 66,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Rạp chiếu phim",
+      "num_videos": 66,
+      "num_signers": 26
+    },
+    {
       "gloss": "Vợ",
       "num_videos": 66,
       "num_signers": 26
@@ -493,32 +498,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Quần đùi",
-      "num_videos": 66,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bóng rổ",
-      "num_videos": 65,
-      "num_signers": 26
-    },
-    {
       "gloss": "Ca sĩ",
       "num_videos": 65,
       "num_signers": 26
     },
     {
-      "gloss": "Phơi đồ",
-      "num_videos": 65,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Ngân hàng",
-      "num_videos": 65,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Thành phố",
+      "gloss": "Bóng rổ",
       "num_videos": 65,
       "num_signers": 26
     },
@@ -528,13 +513,18 @@
       "num_signers": 26
     },
     {
-      "gloss": "Báo cáo",
-      "num_videos": 64,
+      "gloss": "Ngân hàng",
+      "num_videos": 65,
       "num_signers": 26
     },
     {
-      "gloss": "Trường học",
-      "num_videos": 64,
+      "gloss": "Phơi đồ",
+      "num_videos": 65,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Thành phố",
+      "num_videos": 65,
       "num_signers": 26
     },
     {
@@ -543,7 +533,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Công viên",
+      "gloss": "Nhà sách",
+      "num_videos": 64,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Báo cáo",
       "num_videos": 64,
       "num_signers": 26
     },
@@ -553,12 +548,22 @@
       "num_signers": 26
     },
     {
+      "gloss": "Bóng chuyền",
+      "num_videos": 64,
+      "num_signers": 26
+    },
+    {
       "gloss": "Siêu thị",
       "num_videos": 64,
       "num_signers": 26
     },
     {
-      "gloss": "Nhà trọ",
+      "gloss": "Công viên",
+      "num_videos": 64,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bút chì",
       "num_videos": 64,
       "num_signers": 26
     },
@@ -568,7 +573,27 @@
       "num_signers": 26
     },
     {
+      "gloss": "Nhà trọ",
+      "num_videos": 64,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Trường học",
+      "num_videos": 64,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nhanh",
+      "num_videos": 64,
+      "num_signers": 26
+    },
+    {
       "gloss": "Con chó",
+      "num_videos": 64,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Chậm chạp",
       "num_videos": 64,
       "num_signers": 26
     },
@@ -583,28 +608,8 @@
       "num_signers": 26
     },
     {
-      "gloss": "Chậm chạp",
-      "num_videos": 64,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nhà sách",
-      "num_videos": 64,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bóng chuyền",
-      "num_videos": 64,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bút chì",
-      "num_videos": 64,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nhanh",
-      "num_videos": 64,
+      "gloss": "Thứ tư",
+      "num_videos": 63,
       "num_signers": 26
     },
     {
@@ -613,17 +618,32 @@
       "num_signers": 26
     },
     {
-      "gloss": "Bún",
+      "gloss": "Quả mận",
       "num_videos": 63,
       "num_signers": 26
     },
     {
-      "gloss": "Trứng",
+      "gloss": "Đẹp (người)",
       "num_videos": 63,
       "num_signers": 26
     },
     {
-      "gloss": "Ồn ào",
+      "gloss": "Hài hước",
+      "num_videos": 63,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Trung thu",
+      "num_videos": 63,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Vở",
+      "num_videos": 63,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Trung Quốc",
       "num_videos": 63,
       "num_signers": 26
     },
@@ -638,52 +658,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Thứ tư",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Vở",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Trung thu",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Trung Quốc",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Thứ ba",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cắm trại",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Hàn Quốc",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Đẹp (người)",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Quả mận",
-      "num_videos": 63,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Hài hước",
+      "gloss": "Trứng",
       "num_videos": 63,
       "num_signers": 26
     },
@@ -693,12 +668,32 @@
       "num_signers": 26
     },
     {
-      "gloss": "Đá cầu",
-      "num_videos": 62,
+      "gloss": "Thứ ba",
+      "num_videos": 63,
       "num_signers": 26
     },
     {
-      "gloss": "Mềm",
+      "gloss": "Hàn Quốc",
+      "num_videos": 63,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Ồn ào",
+      "num_videos": 63,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cắm trại",
+      "num_videos": 63,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bún",
+      "num_videos": 63,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nhà",
       "num_videos": 62,
       "num_signers": 26
     },
@@ -708,32 +703,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Đẹp (vật)",
+      "gloss": "Cái quần",
       "num_videos": 62,
       "num_signers": 26
     },
     {
-      "gloss": "Màu hồng",
-      "num_videos": 62,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Laptop",
-      "num_videos": 62,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nhảy dây",
-      "num_videos": 62,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nhà",
-      "num_videos": 62,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Kẹo",
+      "gloss": "Chợ",
       "num_videos": 62,
       "num_signers": 26
     },
@@ -743,12 +718,37 @@
       "num_signers": 26
     },
     {
-      "gloss": "Dữ",
+      "gloss": "Nhảy dây",
       "num_videos": 62,
       "num_signers": 26
     },
     {
-      "gloss": "Cái quần",
+      "gloss": "Hay (khen)",
+      "num_videos": 62,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Mềm",
+      "num_videos": 62,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Laptop",
+      "num_videos": 62,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Kẹo",
+      "num_videos": 62,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Màu hồng",
+      "num_videos": 62,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Dữ",
       "num_videos": 62,
       "num_signers": 26
     },
@@ -763,37 +763,17 @@
       "num_signers": 26
     },
     {
-      "gloss": "Chợ",
+      "gloss": "Đá cầu",
       "num_videos": 62,
       "num_signers": 26
     },
     {
-      "gloss": "Hay (khen)",
+      "gloss": "Đẹp (vật)",
       "num_videos": 62,
       "num_signers": 26
     },
     {
-      "gloss": "Yên tĩnh",
-      "num_videos": 61,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bình minh",
-      "num_videos": 61,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Dỗi",
-      "num_videos": 61,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Quả địa cầu",
-      "num_videos": 61,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Công ty",
+      "gloss": "Tháng sáu",
       "num_videos": 61,
       "num_signers": 26
     },
@@ -808,17 +788,22 @@
       "num_signers": 26
     },
     {
-      "gloss": "Thông minh",
-      "num_videos": 61,
-      "num_signers": 26
-    },
-    {
       "gloss": "Tháng một",
       "num_videos": 61,
       "num_signers": 26
     },
     {
-      "gloss": "Tháng sáu",
+      "gloss": "Mùa xuân",
+      "num_videos": 61,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Mì gói",
+      "num_videos": 61,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Thông minh",
       "num_videos": 61,
       "num_signers": 26
     },
@@ -828,17 +813,12 @@
       "num_signers": 26
     },
     {
+      "gloss": "Quả địa cầu",
+      "num_videos": 61,
+      "num_signers": 26
+    },
+    {
       "gloss": "Thời gian",
-      "num_videos": 61,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nhảy cao",
-      "num_videos": 61,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nhật Bản",
       "num_videos": 61,
       "num_signers": 26
     },
@@ -853,22 +833,62 @@
       "num_signers": 25
     },
     {
-      "gloss": "Mùa xuân",
+      "gloss": "Dỗi",
       "num_videos": 61,
       "num_signers": 26
     },
     {
-      "gloss": "Mì gói",
+      "gloss": "Yên tĩnh",
       "num_videos": 61,
       "num_signers": 26
     },
     {
-      "gloss": "Màu đỏ",
+      "gloss": "Công ty",
+      "num_videos": 61,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bình minh",
+      "num_videos": 61,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nhảy cao",
+      "num_videos": 61,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nhật Bản",
+      "num_videos": 61,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Rửa chén",
       "num_videos": 60,
       "num_signers": 26
     },
     {
-      "gloss": "Máy chiếu",
+      "gloss": "Diễn viên",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Mỹ",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nghèo",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Con rùa",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Mũ bảo hiểm",
       "num_videos": 60,
       "num_signers": 26
     },
@@ -878,17 +898,42 @@
       "num_signers": 26
     },
     {
-      "gloss": "Màu xanh lá cây",
+      "gloss": "Tháng ba",
       "num_videos": 60,
       "num_signers": 26
     },
     {
-      "gloss": "Bàn phím",
+      "gloss": "Máy chiếu",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Thái Lan",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Dở",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Màu đỏ",
       "num_videos": 60,
       "num_signers": 26
     },
     {
       "gloss": "Bà ngoại",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Màu xanh lá cây",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Hiền",
       "num_videos": 60,
       "num_signers": 26
     },
@@ -903,37 +948,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Gần",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Hiền",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nghèo",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Mũ bảo hiểm",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Mỹ",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Việt Nam",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Thứ năm",
+      "gloss": "Bàn phím",
       "num_videos": 60,
       "num_signers": 26
     },
@@ -943,47 +958,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Tháng ba",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Thái Lan",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Diễn viên",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Rửa chén",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Dở",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Gội đầu",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
       "gloss": "Xin lỗi",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bóng đá",
-      "num_videos": 60,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Con rùa",
       "num_videos": 60,
       "num_signers": 26
     },
@@ -993,22 +968,32 @@
       "num_signers": 26
     },
     {
-      "gloss": "Mưa",
-      "num_videos": 59,
+      "gloss": "Gần",
+      "num_videos": 60,
       "num_signers": 26
     },
     {
-      "gloss": "Tháng chín",
-      "num_videos": 59,
+      "gloss": "Gội đầu",
+      "num_videos": 60,
       "num_signers": 26
     },
     {
-      "gloss": "Tháng bảy",
-      "num_videos": 59,
+      "gloss": "Thứ năm",
+      "num_videos": 60,
       "num_signers": 26
     },
     {
-      "gloss": "Màu cam",
+      "gloss": "Việt Nam",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bóng đá",
+      "num_videos": 60,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Tháng",
       "num_videos": 59,
       "num_signers": 26
     },
@@ -1018,27 +1003,42 @@
       "num_signers": 26
     },
     {
-      "gloss": "Mặn",
+      "gloss": "Bóng bàn",
       "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Mùa mưa",
+      "gloss": "Xin",
       "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Lùn",
+      "gloss": "Bút bi",
       "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Ba lô",
+      "gloss": "Cảm thấy",
       "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Hư",
+      "gloss": "Chua",
+      "num_videos": 59,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Chật",
+      "num_videos": 59,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Thứ bảy",
+      "num_videos": 59,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Chồng",
       "num_videos": 59,
       "num_signers": 26
     },
@@ -1053,52 +1053,22 @@
       "num_signers": 26
     },
     {
-      "gloss": "Sữa",
-      "num_videos": 59,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Xin",
-      "num_videos": 59,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chua",
-      "num_videos": 59,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bút bi",
-      "num_videos": 59,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Tháng",
-      "num_videos": 59,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Thứ bảy",
-      "num_videos": 59,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chật",
-      "num_videos": 59,
-      "num_signers": 26
-    },
-    {
       "gloss": "Tháng tư",
       "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Bóng bàn",
+      "gloss": "Sữa",
       "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Cảm thấy",
+      "gloss": "Tháng chín",
+      "num_videos": 59,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Tháng bảy",
       "num_videos": 59,
       "num_signers": 26
     },
@@ -1108,117 +1078,42 @@
       "num_signers": 26
     },
     {
-      "gloss": "Chồng",
+      "gloss": "Mặn",
       "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Con trai",
-      "num_videos": 58,
+      "gloss": "Màu cam",
+      "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Không cần",
-      "num_videos": 58,
+      "gloss": "Lùn",
+      "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Khoe khoang",
-      "num_videos": 58,
+      "gloss": "Mưa",
+      "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Sạch sẽ",
-      "num_videos": 58,
+      "gloss": "Mùa mưa",
+      "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Không quen",
-      "num_videos": 58,
+      "gloss": "Hư",
+      "num_videos": 59,
       "num_signers": 26
     },
     {
-      "gloss": "Xấu (người)",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chạy",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chết",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bắt buộc",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bận",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Dụng cụ học tập",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Dừng lại",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Quả dâu",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Quả bơ",
-      "num_videos": 58,
+      "gloss": "Ba lô",
+      "num_videos": 59,
       "num_signers": 26
     },
     {
       "gloss": "Gọi",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Có",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cái kéo",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cái áo",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cung cấp",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Tháng tám",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Quả dứa",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cục tẩy",
       "num_videos": 58,
       "num_signers": 26
     },
@@ -1228,27 +1123,32 @@
       "num_signers": 26
     },
     {
-      "gloss": "Khô",
+      "gloss": "Cái áo",
       "num_videos": 58,
       "num_signers": 26
     },
     {
-      "gloss": "Kính lúp",
+      "gloss": "Quả bơ",
       "num_videos": 58,
       "num_signers": 26
     },
     {
-      "gloss": "Giày",
+      "gloss": "Quả dâu",
       "num_videos": 58,
       "num_signers": 26
     },
     {
-      "gloss": "Rẻ",
+      "gloss": "Quả dứa",
       "num_videos": 58,
       "num_signers": 26
     },
     {
-      "gloss": "Dũng cảm",
+      "gloss": "Tháng tám",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cái kéo",
       "num_videos": 58,
       "num_signers": 26
     },
@@ -1268,7 +1168,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Cần",
+      "gloss": "Bận",
       "num_videos": 58,
       "num_signers": 26
     },
@@ -1278,12 +1178,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Tết Âm lịch",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chụp hình",
+      "gloss": "Bắt buộc",
       "num_videos": 58,
       "num_signers": 26
     },
@@ -1293,52 +1188,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Vòng tay",
+      "gloss": "Cung cấp",
       "num_videos": 58,
       "num_signers": 26
     },
     {
-      "gloss": "Kẹp tóc",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Ngủ",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Kem",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nướng",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bia",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Mua bán",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bánh xèo",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Đắt",
-      "num_videos": 58,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Ốm",
+      "gloss": "Rẻ",
       "num_videos": 58,
       "num_signers": 26
     },
@@ -1348,12 +1203,32 @@
       "num_signers": 26
     },
     {
-      "gloss": "Giấy nháp",
+      "gloss": "Không quen",
       "num_videos": 58,
       "num_signers": 26
     },
     {
-      "gloss": "Nước",
+      "gloss": "Không cần",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Chạy",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Kính lúp",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Con trai",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Mua bán",
       "num_videos": 58,
       "num_signers": 26
     },
@@ -1363,17 +1238,162 @@
       "num_signers": 26
     },
     {
-      "gloss": "Hứa",
+      "gloss": "Chết",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Sạch sẽ",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Kẹp tóc",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Giấy nháp",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Dụng cụ học tập",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Chụp hình",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Tết Âm lịch",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Dừng lại",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Xấu (người)",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Khoe khoang",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Ốm",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bia",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Dũng cảm",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Ngủ",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Đắt",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cục tẩy",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Có",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cần",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Kem",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bánh xèo",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Giày",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nước",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nướng",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Khô",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Vòng tay",
+      "num_videos": 58,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Viên phấn",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Giờ",
+      "gloss": "Thể dục (thể thao)",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Điền kinh",
+      "gloss": "Buổi trưa",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Hôi",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Tắm rửa",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Đọc",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Khó",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1383,7 +1403,42 @@
       "num_signers": 26
     },
     {
-      "gloss": "Ăn",
+      "gloss": "Gạo",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Buổi chiều",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Giới thiệu",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Giờ",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Buổi sáng",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Khóc",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Đắng",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Đậm",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1393,14 +1448,49 @@
       "num_signers": 26
     },
     {
-      "gloss": "Sáng tạo",
+      "gloss": "Điền kinh",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Quả dừa",
+      "gloss": "Ăn",
       "num_videos": 57,
       "num_signers": 26
+    },
+    {
+      "gloss": "Hiệu trưởng",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cho",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cao (đồ vật)",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Tìm",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bánh bao",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Hứa",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Trường Cao đẳng",
+      "num_videos": 57,
+      "num_signers": 23
     },
     {
       "gloss": "Võ",
@@ -1413,52 +1503,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Cao (đồ vật)",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cho",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Viên phấn",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Tắm rửa",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Tìm",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Con mèo",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Trường Cao đẳng",
-      "num_videos": 57,
-      "num_signers": 23
-    },
-    {
-      "gloss": "Cà phê",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cầu lông",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Già",
+      "gloss": "Hy vọng",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1468,22 +1513,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Sai",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Con gái",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Quan sát",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Quen",
+      "gloss": "Giây",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1493,22 +1523,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Giây",
+      "gloss": "Mới",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Giới thiệu",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Gạo",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Rượu",
+      "gloss": "Quả dừa",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1518,7 +1538,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Cảm ơn",
+      "gloss": "Cà phê",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Rượu",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1528,32 +1553,17 @@
       "num_signers": 26
     },
     {
-      "gloss": "Hy vọng",
+      "gloss": "Già",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Khó",
+      "gloss": "Sai",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Mới",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Mẹ",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Mạnh",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Khóc",
+      "gloss": "Quan sát",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1563,7 +1573,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Ngu ngốc",
+      "gloss": "Sáng tạo",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cầu lông",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1573,7 +1588,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Hiệu trưởng",
+      "gloss": "Quen",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1583,42 +1598,22 @@
       "num_signers": 26
     },
     {
-      "gloss": "Nói",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Buổi chiều",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bánh bao",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Buổi trưa",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Buổi sáng",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Đắng",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Đọc",
-      "num_videos": 57,
-      "num_signers": 26
-    },
-    {
       "gloss": "Mát mẻ",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Con gái",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Mẹ",
+      "num_videos": 57,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Ngu ngốc",
       "num_videos": 57,
       "num_signers": 26
     },
@@ -1628,88 +1623,23 @@
       "num_signers": 26
     },
     {
-      "gloss": "Đậm",
+      "gloss": "Con mèo",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Hôi",
+      "gloss": "Mạnh",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Thể dục (thể thao)",
+      "gloss": "Cảm ơn",
       "num_videos": 57,
       "num_signers": 26
     },
     {
-      "gloss": "Đúng",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Đồng ý",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Múa",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Máy bay",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Màu trắng",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Giỏi",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Năm",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Giặt đồ",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Nấu",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Đồ buộc tóc",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Xe tải",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Vâng lời",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bảo vệ",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cay",
-      "num_videos": 56,
+      "gloss": "Nói",
+      "num_videos": 57,
       "num_signers": 26
     },
     {
@@ -1718,37 +1648,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Đi",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Bắt chước",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Xấu (vật)",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Con bò",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Con gà",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Thử",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chăm chỉ",
+      "gloss": "Cũ",
       "num_videos": 56,
       "num_signers": 26
     },
@@ -1758,17 +1658,17 @@
       "num_signers": 26
     },
     {
-      "gloss": "Nông dân",
+      "gloss": "Múa",
       "num_videos": 56,
       "num_signers": 26
     },
     {
-      "gloss": "Học",
+      "gloss": "Uống",
       "num_videos": 56,
       "num_signers": 26
     },
     {
-      "gloss": "Nóng",
+      "gloss": "Con bò",
       "num_videos": 56,
       "num_signers": 26
     },
@@ -1778,32 +1678,52 @@
       "num_signers": 26
     },
     {
-      "gloss": "Khỏe",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Ngon miệng",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
       "gloss": "Nói chuyện",
       "num_videos": 56,
       "num_signers": 26
     },
     {
-      "gloss": "Màu đen",
+      "gloss": "Vâng lời",
       "num_videos": 56,
       "num_signers": 26
     },
     {
-      "gloss": "Con thỏ",
+      "gloss": "Đi",
       "num_videos": 56,
       "num_signers": 26
     },
     {
-      "gloss": "Thấp (đồ vật)",
+      "gloss": "Nóng",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nấu",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Năm",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nông dân",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Đúng",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Xấu (vật)",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Xe tải",
       "num_videos": 56,
       "num_signers": 26
     },
@@ -1813,7 +1733,107 @@
       "num_signers": 26
     },
     {
+      "gloss": "Màu trắng",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
       "gloss": "Quả cam",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Quả chuối",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Con gà",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Giỏi",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Màu đen",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Máy bay",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Giặt đồ",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Ngon miệng",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Thấp (đồ vật)",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Thịt",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Đồng ý",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Con thỏ",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Khỏe",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Chăm chỉ",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Con trâu",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Thử",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Rửa mặt",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cay",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Cao (người)",
+      "num_videos": 56,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Bắt chước",
       "num_videos": 56,
       "num_signers": 26
     },
@@ -1828,72 +1848,22 @@
       "num_signers": 26
     },
     {
-      "gloss": "Quả chuối",
+      "gloss": "Đồ buộc tóc",
       "num_videos": 56,
       "num_signers": 26
     },
     {
-      "gloss": "Cũ",
+      "gloss": "Bảo vệ",
       "num_videos": 56,
       "num_signers": 26
     },
     {
-      "gloss": "Rửa mặt",
+      "gloss": "Học",
       "num_videos": 56,
       "num_signers": 26
     },
     {
-      "gloss": "Con trâu",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Thịt",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Cao (người)",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Uống",
-      "num_videos": 56,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Áo đầm",
-      "num_videos": 55,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Chủ tịch",
-      "num_videos": 55,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Áo thun",
-      "num_videos": 55,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Y tá",
-      "num_videos": 55,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Trực thăng",
-      "num_videos": 55,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Không nghe lời",
-      "num_videos": 55,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Luật sư",
+      "gloss": "Đầu bếp",
       "num_videos": 55,
       "num_signers": 26
     },
@@ -1903,17 +1873,7 @@
       "num_signers": 26
     },
     {
-      "gloss": "Đầu bếp",
-      "num_videos": 55,
-      "num_signers": 26
-    },
-    {
       "gloss": "Buổi tối",
-      "num_videos": 55,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Giám đốc",
       "num_videos": 55,
       "num_signers": 26
     },
@@ -1923,7 +1883,17 @@
       "num_signers": 26
     },
     {
-      "gloss": "Khăn quàng cổ",
+      "gloss": "Chủ tịch",
+      "num_videos": 55,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Áo đầm",
+      "num_videos": 55,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Trực thăng",
       "num_videos": 55,
       "num_signers": 26
     },
@@ -1933,18 +1903,38 @@
       "num_signers": 26
     },
     {
+      "gloss": "Luật sư",
+      "num_videos": 55,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Y tá",
+      "num_videos": 55,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Khăn quàng cổ",
+      "num_videos": 55,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Không nghe lời",
+      "num_videos": 55,
+      "num_signers": 26
+    },
+    {
       "gloss": "Xe buýt",
       "num_videos": 55,
       "num_signers": 26
     },
     {
-      "gloss": "Nhân viên văn phòng",
-      "num_videos": 54,
+      "gloss": "Giám đốc",
+      "num_videos": 55,
       "num_signers": 26
     },
     {
-      "gloss": "Xe máy",
-      "num_videos": 54,
+      "gloss": "Áo thun",
+      "num_videos": 55,
       "num_signers": 26
     },
     {
@@ -1953,32 +1943,12 @@
       "num_signers": 26
     },
     {
-      "gloss": "Khám bệnh",
-      "num_videos": 54,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Mũ",
-      "num_videos": 54,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Học sinh",
+      "gloss": "Sinh viên",
       "num_videos": 54,
       "num_signers": 26
     },
     {
       "gloss": "Dép",
-      "num_videos": 54,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Yêu thương",
-      "num_videos": 54,
-      "num_signers": 26
-    },
-    {
-      "gloss": "Sinh viên",
       "num_videos": 54,
       "num_signers": 26
     },
@@ -1993,12 +1963,42 @@
       "num_signers": 26
     },
     {
-      "gloss": "Áo sơ mi",
+      "gloss": "Khám bệnh",
+      "num_videos": 54,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Xe máy",
+      "num_videos": 54,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Nhân viên văn phòng",
       "num_videos": 54,
       "num_signers": 26
     },
     {
       "gloss": "Xe đạp",
+      "num_videos": 54,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Học sinh",
+      "num_videos": 54,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Yêu thương",
+      "num_videos": 54,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Áo sơ mi",
+      "num_videos": 54,
+      "num_signers": 26
+    },
+    {
+      "gloss": "Mũ",
       "num_videos": 54,
       "num_signers": 26
     },
