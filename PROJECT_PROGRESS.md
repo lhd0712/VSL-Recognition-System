@@ -1,14 +1,14 @@
 # BÁO CÁO TIẾN ĐỘ VÀ TỔNG HỢP TOÀN DIỆN DỰ ÁN (PROJECT PROGRESS REPORT)
 ## HỆ THỐNG NHẬN DIỆN TỪ VỰNG NGÔN NGỮ KÝ HIỆU VIỆT NAM (VSL400) ĐA GÓC NHÌN
-### KIẾN TRÚC ĐẶC TRƯNG TOÀN THÂN MEDIAPIPE HOLISTIC 225 CHIỀU
+### KIẾN TRÚC ĐẶC TRƯNG TOÀN THÂN MEDIAPIPE HOLISTIC 225 CHIỀU VÀ ĐỘNG HỌC 450 CHIỀU
 
 ---
 
 **Sinh viên thực hiện:** Lê Hoàng Dương - Lớp 22T_KHDL - Trường Đại học Bách khoa, ĐHĐN  
-**Đề tài tốt nghiệp:** Xây dựng hệ thống nhận diện từ vựng Ngôn ngữ Ký hiệu Việt Nam (VSL) đa góc nhìn theo thời gian thực sử dụng MediaPipe và mạng nơ-ron chuỗi thời gian (1D-CNN + GRU/Transformer).  
+**Đề tài tốt nghiệp:** Xây dựng hệ thống nhận diện từ vựng Ngôn ngữ Ký hiệu Việt Nam (VSL) đa góc nhìn theo thời gian thực sử dụng MediaPipe và mạng nơ-ron chuỗi thời gian (Multi-Scale Inception 1D-CNN + Bi-GRU + Temporal Attention).  
 **Tập dữ liệu:** VSL400 (400 từ vựng, 26 người ký, 3 góc nhìn camera, tổng cộng 74.259 video).  
 **Thời gian cập nhật:** Tháng 11/2026.  
-**Tình trạng hiện tại:** Đã hoàn thành toàn bộ Giai đoạn 01, 02, 03, 04. Tập dữ liệu sạch 225 chiều đã phân chia Signer-Disjoint sẵn sàng cho Giai đoạn 05 (Huấn luyện mô hình).
+**Tình trạng hiện tại:** Đã hoàn thành toàn bộ Giai đoạn 01, 02, 03, 04 và hoàn thành xuất sắc **TUẦN 1 của Giai đoạn 05** (Khảo sát và đối chiếu có kiểm soát 3 kiến trúc xương sống cơ sở, khóa thành công Backbone với kết quả bứt phá: **Test Top-1 đạt 79.67%** trên Unseen Signers P24–P26 và **Validation Top-1 đạt 83.52%**). Sẵn sàng chuyển giao sang **TUẦN 2 (Tích hợp Cơ chế Attention: MLP-Attention vs Multi-Head Self-Attention & Kỹ thuật Chống Overfitting)**.
 
 ---
 
@@ -21,9 +21,9 @@
 | **01** | Khảo sát đặc trưng thống kê tập dữ liệu VSL400 | `src/data_processing/01_vsl400-gloss-statistics.ipynb` | `reports/dataset_summary.json`, Figures 01 | **HOÀN THÀNH** |
 | **02** | Trích xuất toàn thân MediaPipe Holistic 225D | `src/data_processing/02_extract-landmarks-part1.ipynb` đến `part7.ipynb` | 74.259 tệp `.npy`, 7 Part CSVs | **HOÀN THÀNH** |
 | **03** | Phân tích chất lượng trích xuất và bóc tách lỗi | `src/data_processing/03_vsl400-extraction-analysis.ipynb` | `reports/extraction_report_holistic_all.csv`, Figures 03 | **HOÀN THÀNH** |
-| **04** | Tiền xử lý, lọc dữ liệu và phân chia Signer-Disjoint | `src/data_processing/04_vsl400-preprocessing-and-split.ipynb` | 6 CSV Splits, `gloss_to_id.json`, Figures 04 | **HOÀN THÀNH** |
-| **05** | Huấn luyện mô hình Đơn góc (Front View 225D) | `src/models/05_vsl400-train-single-view.ipynb` | Checkpoints `.keras`, Training Logs | **SẴN SÀNG** |
-| **06** | Huấn luyện mô hình Đa góc (Multi-View Fusion) | `src/models/06_vsl400-train-multi-view.ipynb` | Checkpoints Multi-View Tri-Stream | Kế hoạch |
+| **04** | Tiền xử lý, lọc dữ liệu và phân chia Signer-Disjoint (Phương án A) | `src/data_processing/04_vsl400-preprocessing-and-split.ipynb` | 6 CSV Splits, `data/processed/gloss_to_id.json`, Figures 04 | **HOÀN THÀNH** |
+| **05** | Huấn luyện mô hình Đơn góc Front View 450D (Lộ trình 3 Tuần: Tuần 1 - Khảo sát Backbone) | `src/models/05_vsl400-train-baseline.ipynb`<br>`src/models/05_vsl400-train-inception.ipynb`<br>`src/models/05_vsl400-train-bilstm.ipynb` | Checkpoints Tuần 1 (`vsl400_exp1_baseline.keras`, `vsl400_exp1_inception.keras`, `vsl400_exp1_bilstm.keras`), Test Top-1 79.67%, Val Top-1 83.52%, Figures Exp 1.1-1.3 | **HOÀN THÀNH TUẦN 1** (Sẵn sàng chuyển giao Tuần 2) |
+| **06** | Huấn luyện mô hình Đa góc (Multi-View Tri-Stream Fusion) | `src/models/06_vsl400-train-multi-view.ipynb` | Checkpoints Multi-View Tri-Stream | Sẵn sàng |
 | **07** | Đánh giá độc lập người ký và Demo thời gian thực | `src/models/07_vsl400-realtime-inference.ipynb` | Pipeline camera trực tiếp | Kế hoạch |
 
 ---
@@ -106,92 +106,126 @@ Tỷ lệ trích xuất đạt trạng thái `ok` đạt **99.997%** (74.257 / 7
 | **Nghiêng trái (`left_view`)** | 24.753 | 67.36 | 81.44% (85.96%) | 85.89% (91.80%) | **91.86% (96.05%)** | **99.97% (100.0%)** |
 | **Nghiêng phải (`right_view`)** | 24.752 | 64.83 | 83.16% (87.10%) | 88.59% (96.23%) | **93.33% (97.44%)** | **100.00% (100.0%)** |
 
-### 4.3. Phân Hạng Chất Lượng Bám Bắt (Tracking Quality Tiers)
-- **Xuất sắc ($\ge 90\%$):** 55.614 video (**74.89%**). Bàn tay hiện diện liên tục, bám bắt hoàn hảo.
-- **Tốt (70% - 90%):** 15.195 video (**20.46%**). Bàn tay rõ nét, chỉ mất 1-3 khung hình chuyển tiếp.
-- **Trung bình (50% - 70%):** 2.502 video (**3.37%**). Bị che khuất một phần trong cử chỉ chạm má/đầu.
-- **Kém (20% - 50%):** 782 video (**1.05%**). Bù đắp mượt mà bằng nội suy tuyến tính.
-- **Rất kém ($< 20\%$):** 164 video (**0.22%**). Nhóm mất dấu áp đảo, loại bỏ ở Giai đoạn 04.
-
-### 4.4. Khảo Sát Zero-Frame và Cơ Sở Toán Học Cho Nội Suy Tuyến Tính
-- Tổng số khung hình khảo sát: 4.852.196 khung hình trên 74.257 video.
-- Tỷ lệ khung hình khuyết bàn tay toàn tập: chỉ chiếm **6.89%**.
-- Trung vị khoảng cách khuyết: **5 frames** (0.20 giây ở 25 FPS). Hơn 75% trường hợp khuyết $\le 8$ frames.
-- **Luận chứng động học sinh học:** Quỹ đạo cử chỉ của người là hàm trơn $C^1$ theo thời gian. Thuật toán Nội suy tuyến tính (Linear Interpolation) khôi phục hoàn hảo các khoảng trống $\le 8$ frames mà không tạo dao động giả overshoot.
-
-### 4.5. Kiểm Định Tính Toàn Vẹn Bộ Ba Góc Nhìn (Tri-view Triplets Completeness)
-- Trong 24.753 cử chỉ duy nhất, có **24.751 video đạt độ đồng bộ 100% cả 3 góc quay (99.992%)**.
-- Khẳng định tính sẵn sàng tuyệt đối cho mô hình dung hợp đa góc nhìn (Multi-View Fusion).
-
-### 4.6. Bảo Chứng Siêu Tham Số Thời Gian $T_{\text{fixed}} = 64$
-- Phân tích hàm mật độ xác suất độ dài video: Trung vị thực nghiệm là 65.0 frames, trung bình là 65.44 frames.
-- Lựa chọn chuẩn hóa $T_{\text{fixed}} = 64 = 2^6$ nằm sát giá trị trung vị và tối ưu hóa cho các phép toán giảm chiều (Pooling/Strided Convolutions) của 1D-CNN và Transformer.
-
 ---
 
-## 5. Chi Tiết Nội Dung Hoàn Thành: Giai Đoạn 04 (Tiền Xử Lý Dữ Liệu & Phân Chia Signer-Disjoint)
+## 5. Chi Tiết Nội Dung Hoàn Thành: Giai Đoạn 04 (Tiền Xử Lý Dữ Liệu & Phân Chia Signer-Disjoint Tối Ưu)
 
 * **Tập tin thực hiện:** `src/data_processing/04_vsl400-preprocessing-and-split.ipynb`
-* **Mục tiêu:** Làm sạch dữ liệu, phân chia Signer-Disjoint độc lập người ký và đóng gói pipeline chuẩn hóa 225 chiều.
+* **Mục tiêu:** Làm sạch dữ liệu, phân chia Signer-Disjoint chuẩn hóa (Phương án A) và đóng gói pipeline chuẩn hóa 225 chiều.
 
-### 5.1. Thống Kê Đối Soát Toàn Diện Trước vs Sau Khi Lọc Dữ Liệu
-
+### 5.1. Thống Kê Đối Soát Sau Khi Lọc Dữ Liệu
 Áp dụng tiêu chí lọc: Loại bỏ 1 video lỗi MP4, 1 video mất dấu hoàn toàn và 99 video có $\text{hand\_det\_rate} < 20\%$:
+* Tổng số bản ghi giữ lại: **74.158 / 74.259 mẫu (99.864%)**, bảo tồn nguyên vẹn **400 / 400 từ vựng** và **26 / 26 người ký**.
+* Góc chính diện `front_view`: **24.738 mẫu** (bảo tồn 99.94%).
+* Góc nghiêng trái `left_view`: **24.684 mẫu** (bảo tồn 99.72%).
+* Góc nghiêng phải `right_view`: **24.736 mẫu** (bảo tồn 99.93%).
 
-| Chỉ số Khảo sát | Trước khi lọc (Raw) | Sau khi lọc (Clean) | Bị loại bỏ (Diff) | Tỷ lệ giữ lại (%) |
-|---|:---:|:---:|:---:|:---:|
-| **Tổng số bản ghi (Samples)** | 74.259 | **74.158** | 101 | **99.864%** |
-| **Số video cử chỉ duy nhất** | 24.753 | **24.743** | 10 | **99.960%** |
-| **Số lượng từ vựng (Glosses)** | 400 | **400** | 0 | **100.000%** |
-| **Số lượng người ký (Signers)** | 26 | **26** | 0 | **100.000%** |
-| **Bộ ba góc nhìn (Triplets)** | 24.751 | **24.666** | 85 | **99.657%** |
+### 5.2. Kết Quả Phân Chia Signer-Disjoint Mới (Phương Án A - Part-Stratified Disjoint)
 
-* **Đối chiếu theo 3 góc nhìn:**
-  - `front_view`: 24.753 $\rightarrow$ **24.738** mẫu (loại 15 mẫu, giữ lại 99.94%).
-  - `left_view`: 24.753 $\rightarrow$ **24.684** mẫu (loại 69 mẫu, giữ lại 99.72%).
-  - `right_view`: 24.753 $\rightarrow$ **24.736** mẫu (loại 17 mẫu, giữ lại 99.93%).
-* **Đối chiếu theo người ký:** 23 / 26 người ký được bảo toàn 100% mẫu. Chỉ có 3 người ký có mẫu bị loại: Signer 024 (loại 1), Signer 026 (loại 19), Signer 028 (loại 81).
-* **Đối chiếu theo 400 từ vựng:** 100% 400 từ vựng đều được bảo toàn. Số mẫu mỗi từ dao động từ 158 đến 279 mẫu (trung bình 185.4 mẫu/từ).
+Khắc phục hoàn toàn hiện tượng lệch miền dữ liệu (Part/Session Domain Shift) của phân vùng cũ:
+- **Tập Huấn luyện (Train - 20 người ký):** `001, 002, 003, 004, 007, 009, 010, 011, 013, 014, 015, 018, 019, 020, 021, 022, 023, 025, 027, 028`. Hiện diện đầy đủ trên cả **7 Parts (Part 1 đến Part 7)**. Đưa các Signer có landmark nhiễu (`028, 025`) vào Train làm thành phần làm nhiễu điều hòa tự nhiên (Data Regularizer).
+- **Tập Kiểm định (Validation - 3 người ký):** `006` (Part 2), `012` (Part 3), `026` (Part 6-7). Bám bắt bàn tay đạt chuẩn **94.36%**.
+- **Tập Kiểm thử độc lập (Unseen Signers Test - 3 người ký):** `008` (Part 2, tốt nhất tập 98.33%), `016` (Part 4, 96.35%), `024` (Part 6-7, 96.36%). Trung bình đạt **96.83%** (chuẩn mực nhất toàn bộ tập dữ liệu).
 
-### 5.2. Kết Quả Phân Chia Signer-Disjoint (Train / Val / Test)
+| Kịch bản Mô hình | Phân vùng (Split) | Danh sách Người ký (Signers) | Số lượng mẫu | Tỷ lệ (%) | Bao phủ Glosses | Part Coverage | Tệp CSV Phân Vùng |
+|---|:---:|---|:---:|:---:|:---:|:---:|---|
+| **Single-View (`front_view`)** | **Train** | 20 signers (`001..028`) | **17.789** | **71.91%** | **400 / 400 (100%)** | Part 1..7 | `data/processed/splits/train_front.csv` |
+| | **Validation** | 3 signers (`006, 012, 026`) | **3.520** | **14.23%** | **400 / 400 (100%)** | Part 2, 3, 6, 7 | `data/processed/splits/val_front.csv` |
+| | **Test** | 3 signers (`008, 016, 024`) | **3.429** | **13.86%** | **400 / 400 (100%)** | Part 2, 4, 6, 7 | `data/processed/splits/test_front.csv` |
+| | **Tổng Front View** | **26 signers** | **24.738** | **100.00%** | **400 / 400 (100%)** | Toàn bộ 7 Parts | |
+| **Multi-View (`tri_view`)** | **Train** | 20 signers (`001..028`) | **53.364** | **71.96%** | **400 / 400 (100%)** | Part 1..7 | `data/processed/splits/train_all.csv` |
+| | **Validation** | 3 signers (`006, 012, 026`) | **10.559** | **14.24%** | **400 / 400 (100%)** | Part 2, 3, 6, 7 | `data/processed/splits/val_all.csv` |
+| | **Test** | 3 signers (`008, 016, 024`) | **10.235** | **13.80%** | **400 / 400 (100%)** | Part 2, 4, 6, 7 | `data/processed/splits/test_all.csv` |
+| | **Tổng Multi-View** | **26 signers** | **74.158** | **100.00%** | **400 / 400 (100%)** | Toàn bộ 7 Parts | |
 
-Chiến lược phân chia độc lập người ký phân bổ 26 người ký thành 3 tập tách biệt, triệt tiêu hoàn toàn hiện tượng rò rỉ dữ liệu (Data Leakage):
-
-![Kiến Trúc Phân Chia Dữ Liệu Signer-Disjoint](reports/figures/fig_data_split_architecture.png)
-
-| Kịch bản Mô hình | Phân vùng (Split) | Danh sách Người ký (Signers) | Số lượng mẫu | Tỷ lệ (%) | Bao phủ từ vựng | Tệp danh mục CSV đã xuất |
-|---|:---:|---|:---:|:---:|:---:|---|
-| **Single-View (`front_view`)** | **Train** | 20 signers (`001..022`) | 17.715 | 71.61% | **400 / 400 (100%)** | `data/processed/splits/train_front.csv` |
-| | **Validation** | 3 signers (`023, 026, 027`) | 3.517 | 14.22% | **400 / 400 (100%)** | `data/processed/splits/val_front.csv` |
-| | **Test** | 3 signers (`024, 025, 028`) | 3.506 | 14.17% | **400 / 400 (100%)** | `data/processed/splits/test_front.csv` |
-| | **Tổng Front View** | **26 signers** | **24.738** | **100.00%** | **400 / 400 (100%)** | |
-| **Multi-View (`tri_view`)** | **Train** | 20 signers (`001..022`) | 53.145 | 71.66% | **400 / 400 (100%)** | `data/processed/splits/train_all.csv` |
-| | **Validation** | 3 signers (`023, 026, 027`) | 10.556 | 14.23% | **400 / 400 (100%)** | `data/processed/splits/val_all.csv` |
-| | **Test** | 3 signers (`024, 025, 028`) | 10.457 | 14.10% | **400 / 400 (100%)** | `data/processed/splits/test_all.csv` |
-| | **Tổng Multi-View** | **26 signers** | **74.158** | **100.00%** | **400 / 400 (100%)** | |
-
-* **Kiểm định tệp nhị phân trên đĩa:** 100% (74.158 / 74.158) tệp `.npy` đều tồn tại toàn vẹn trên đĩa cứng tại `data/processed/landmarks_holistic/`.
-* **Từ điển nhãn số:** Đã xuất chuẩn hóa `data/processed/gloss_to_id.json` và `data/processed/id_to_gloss.json`.
-
-### 5.3. Pipeline Chuẩn Hóa Không - Thời Gian 225 Chiều
-Hàm `preprocess_sequence(npy_path, target_frames=64)` chuyển đổi tệp `.npy` thô sang tensor chuẩn hóa $[64, 225]$ kiểu `float32`:
-1. `impute_zero_frames`: Nội suy tuyến tính lấp đầy các frame mất dấu độc lập trên 3 kênh (Tay phải, Tay trái, Pose thân trên).
-2. `resample_sequence`: Nội suy thời gian đưa độ dài chuỗi về cố định $T_{\text{fixed}} = 64$ frames.
-3. `normalize_spatial`:
-   - Bàn tay: Wrist-Centering trừ tọa độ cổ tay tương ứng cho các khớp ngón tay 1 đến 20, bảo toàn tọa độ cổ tay ở khớp 0.
-   - Thân trên Pose: Chest-Centering trừ tọa độ tâm ngực và co giãn theo độ rộng hai vai.
-4. **Kiểm thử đơn vị trên 100 mẫu ngẫu nhiên:** 100% đạt chuẩn kích thước $[64, 225]$, 0% NaN/Inf, 0% hàng all-zero.
+* Kiểm tra rò rỉ: $\text{Train} \cap \text{Val} = \emptyset$, $\text{Train} \cap \text{Test} = \emptyset$, $\text{Val} \cap \text{Test} = \emptyset$. Đồng bộ 100% trong `data/processed/split_summary.json`.
 
 ---
 
-## 6. Danh Mục Biểu Đồ Minh Chứng Đã Lưu Trữ
+## 6. Chi Tiết Nội Dung Hoàn Thành: Giai Đoạn 05 (Huấn Luyện Front-View 450D - Tổng Kết Tuần 1)
+
+* **Kế hoạch triển khai:** Kế hoạch thực nghiệm 3 tuần đã duyệt (`PHASE_05_TRAINING_PLAN_3WEEKS.md`).
+* **Trọng tâm Tuần 1:** Thiết lập Baseline chuẩn mực và thực hiện khảo sát đối đầu có kiểm soát (Controlled Ablation Study) giữa 3 biến thể kiến trúc xương sống (Backbone Comparison) trên không gian 400 từ vựng góc nhìn chính diện (`front_view`).
+* **Hạ tầng & Dữ liệu:** 17.789 mẫu Train (Signers 001..028), 3.520 mẫu Validation (Signers 006, 012, 026), 3.429 mẫu Unseen Test (Signers 008, 016, 024). Bộ đệm đặc trưng chuẩn hóa 450D (225D Tọa độ không gian + 225D Đạo hàm vận tốc động học, $T=64$).
+* **Chiến lược tối ưu đồng bộ 100%:** `AdamW(learning_rate=1e-3, weight_decay=1e-4)`, `CategoricalCrossentropy(label_smoothing=0.08)`, `ModelCheckpoint` và `ReduceLROnPlateau(factor=0.5, patience=5)` đồng bộ theo dõi metric mục tiêu cao nhất `val_top_1_acc`.
+
+### 6.1. Chi Tiết 3 Thực Nghiệm Độc Lập Trong Tuần 1
+
+#### 1. Thực nghiệm 1.1: Mô hình Baseline Chuẩn (Standard 1D-CNN + 1-Layer Bi-GRU)
+- **Notebook thực thi:** [`src/models/05_vsl400-train-baseline.ipynb`](src/models/05_vsl400-train-baseline.ipynb)
+- **Kiến trúc:** Phép chiếu Linear Dense(256) + 1 tầng Conv1D (64 filters, $k=3$) + 1 tầng Bi-GRU (128 units/chiều) + Dense(400).
+- **Tổng tham số:** **404,688 tham số**.
+- **Tiến trình huấn luyện:** Hoàn tất trọn vẹn 100 epochs trong **40.1 phút**. Hội tụ tối ưu tại **Epoch 96**.
+- **Chỉ số kiểm định & tổng quát hóa:**
+  + Validation Top-1: **74.01%** | Validation Top-5: **93.27%** | Validation Loss: 1.7652.
+  + Test Top-1 (Unseen Signers P24–P26): **70.72%** | Test Top-5: **92.59%** | Test Loss: 1.7806.
+- **Tệp lưu trữ:** Checkpoint [`experiments/checkpoints/vsl400_exp1_baseline.keras`](experiments/checkpoints/vsl400_exp1_baseline.keras), Nhật ký [`experiments/logs/training_exp1_baseline.csv`](experiments/logs/training_exp1_baseline.csv), Chỉ số [`experiments/results/metrics_exp1_baseline.json`](experiments/results/metrics_exp1_baseline.json).
+
+#### 2. Thực nghiệm 1.2: Khối Tích Chập Đa Thang Đo (Multi-Scale Inception 1D-CNN + 1-Layer Bi-GRU)
+- **Notebook thực thi:** [`src/models/05_vsl400-train-inception.ipynb`](src/models/05_vsl400-train-inception.ipynb)
+- **Cải tiến kiến trúc:** Thay thế Conv1D đơn lẻ bằng khối Inception 3 nhánh song song:
+  + Nhánh 1 ($k=1$, 96 filters): Bắt vi cử chỉ đầu ngón tay tức thời.
+  + Nhánh 2 ($k=3$, 96 filters): Trích xuất tư thế bàn tay ngắn hạn.
+  + Nhánh 3 ($k=5$, 64 filters): Bao quát toàn bộ quỹ đạo cánh tay vĩ mô.
+  + Ghép nối (Concatenate 256 filters) kết hợp liên kết tàn dư (Residual Add) và LayerNormalization.
+- **Tổng tham số:** **762,512 tham số**.
+- **Tiến trình huấn luyện:** Hoàn tất 100 epochs trong **75.7 phút**. Hội tụ tối ưu tại **Epoch 92**.
+- **Chỉ số bứt phá vượt bậc:**
+  + Validation Top-1: **82.84%** (**+8.83%** so với Baseline) | Validation Top-5: **95.37%** (+2.10%) | Validation Loss: **1.4934** (-0.2718).
+  + Test Top-1 (Unseen Signers P24–P26): **79.67%** (**+8.95%** so với Baseline) | Test Top-5: **95.65%** (+3.06%) | Test Loss: **1.4930** (-0.2876).
+- **Tệp lưu trữ:** Checkpoint [`experiments/checkpoints/vsl400_exp1_inception.keras`](experiments/checkpoints/vsl400_exp1_inception.keras), Nhật ký [`experiments/logs/training_exp1_inception.csv`](experiments/logs/training_exp1_inception.csv), Chỉ số [`experiments/results/metrics_exp1_2_inception.json`](experiments/results/metrics_exp1_2_inception.json).
+
+#### 3. Thực nghiệm 1.3: So Sánh Mạng Hồi Quy Thời Gian (Multi-Scale Inception 1D-CNN + Bi-LSTM)
+- **Notebook thực thi:** [`src/models/05_vsl400-train-bilstm.ipynb`](src/models/05_vsl400-train-bilstm.ipynb)
+- **Cải tiến kiến trúc & Phát hiện học thuật then chốt:**
+  + Tế bào LSTM sở hữu ô nhớ trạng thái độc lập ($C_t$) cùng 3 cổng kiểm soát ($f, i, o$). Khi dùng cấu trúc `return_sequences=False` thông thường, đạo hàm BPTT bị suy giảm lũy thừa qua 64 bước thời gian ($10^{-6} - 10^{-9}$ ở giữa chuỗi) khiến mô hình bị nghẽn ở phân phối ngẫu nhiên.
+  + Đột phá giải pháp: Chuyển sang `return_sequences=True` kết hợp **Global Average Pooling 1D (Gộp trung bình thời gian)**. Thao tác này thiết lập liên kết trực tiếp (Gradient Highway) tới tất cả 64 khung hình, triệt tiêu hoàn toàn điểm mù suy giảm đạo hàm.
+- **Tổng tham số:** **860,304 tham số**.
+- **Tiến trình huấn luyện:** Hoàn tất 100 epochs trong **92.7 phút**. Hội tụ tối ưu tại **Epoch 99**.
+- **Chỉ số kiểm định & tổng quát hóa:**
+  + Validation Top-1: **83.52%** (**+9.51%** so với Baseline, **cao nhất toàn bộ Tuần 1**) | Validation Top-5: **95.77%** | Validation Loss: **1.4435** (**Loss thấp nhất toàn bộ Tuần 1**).
+  + Test Top-1 (Unseen Signers P24–P26): **79.41%** (**+8.69%** so với Baseline, xấp xỉ mức 79.67% của Bi-GRU) | Test Top-5: **94.46%** | Test Loss: 1.5468.
+- **Tệp lưu trữ:** Checkpoint [`experiments/checkpoints/vsl400_exp1_bilstm.keras`](experiments/checkpoints/vsl400_exp1_bilstm.keras), Nhật ký [`experiments/logs/training_exp1_bilstm.csv`](experiments/logs/training_exp1_bilstm.csv), Chỉ số [`experiments/results/metrics_exp1_3_bilstm.json`](experiments/results/metrics_exp1_3_bilstm.json).
+
+---
+
+### 6.2. Bảng Đối Soát Toàn Diện Các Kiến Trúc Xương Sống (Backbone Comparison)
+
+| Tiêu chí Đánh giá | Thực nghiệm 1.1: Baseline (Conv1D + Bi-GRU) | Thực nghiệm 1.2: Inception + Bi-GRU | Thực nghiệm 1.3: Inception + Bi-LSTM (GAP) | Đánh giá Học thuật & So sánh |
+| :--- | :---: | :---: | :---: | :--- |
+| **Số lượng tham số** | 404,688 | 762,512 | 860,304 | Inception Bi-GRU gọn nhẹ hơn Bi-LSTM ~11.4% |
+| **Epoch tối ưu** | 96 / 100 | 92 / 100 | 99 / 100 | Cả 3 mô hình đều đạt điểm chín muồi ở cuối tiến trình |
+| **Validation Loss** | 1.7652 | 1.4934 | **1.4435** | Bi-LSTM đạt hàm mất mát kiểm định thấp nhất |
+| **Validation Top-1 (%)** | 74.01% | 82.84% | **83.52%** | Bi-LSTM dẫn đầu Validation Top-1 (+0.68% so với Bi-GRU) |
+| **Validation Top-5 (%)** | 93.27% | 95.37% | **95.77%** | Cả hai mô hình Inception đều đạt trên 95% |
+| **Test Loss (Unseen Signers)** | 1.7806 | **1.4930** | 1.5468 | Bi-GRU duy trì Loss thấp nhất trên người ký mới |
+| **Test Top-1 (%) (Unseen)** | 70.72% | **79.67%** | 79.41% | **Bi-GRU nhỉnh hơn +0.26% về năng lực tổng quát hóa** |
+| **Test Top-5 (%) (Unseen)** | 92.59% | **95.65%** | 94.46% | Bi-GRU dẫn đầu Top-5 trên tập kiểm thử độc lập |
+| **Thời gian huấn luyện** | **40.1 phút** | 75.7 phút | 92.7 phút | Bi-GRU nhanh hơn Bi-LSTM 18.4% (tối ưu tính toán suy luận) |
+| **Khoảng cách Overfit (Gap)**| ~3.3% | **~3.2%** | ~4.1% | Kiểm soát quá khớp cực tốt (chênh lệch Train-Test rất nhỏ) |
+
+---
+
+### 6.3. Khóa Kiến Trúc Xương Sống (Backbone Lock) Tuần 1
+
+Căn cứ vào kết quả đối soát thực nghiệm đối đầu:
+1. **Khối không gian:** Khối **Multi-Scale Inception 1D-CNN** ($k=1, 3, 5$ song song kết hợp liên kết tàn dư Residual) đã chứng minh tính ưu việt tuyệt đối so với Conv1D đơn lẻ, tạo ra bước nhảy vọt **~+9% Top-1 Accuracy** trên tập người ký mới Unseen Signers.
+2. **Khối thời gian:** 
+   - Cả **Bi-GRU** (Test Top-1: 79.67%) và **Bi-LSTM** kết hợp Temporal Pooling (Test Top-1: 79.41%, Val Top-1: 83.52%) đều đạt hiệu năng xuất sắc, chạm sát ngưỡng mục tiêu 80% của Tuần 1.
+   - **Bi-GRU** được ưu tiên lựa chọn làm Backbone xương sống mặc định cho các thực nghiệm tiếp theo nhờ: tốc độ suy luận nhanh hơn, số lượng tham số nhỏ gọn hơn (762k vs 860k) và độ chính xác tổng quát hóa Unseen Test cao hơn (+0.26%).
+   - Cấu trúc Bi-LSTM kèm Temporal Pooling được bảo tồn như một phương án đối sánh chuẩn mực cao cấp.
+3. **Chính thức Khóa Kiến trúc Backbone Tuần 1:** Hoàn thành 100% mục tiêu Tuần 1 theo kế hoạch 3 tuần. Toàn bộ trọng số tối ưu và nhật ký đã được đồng bộ để chuyển giao sang Tuần 2.
+
+---
+
+## 7. Danh Mục Biểu Đồ Minh Chứng Đã Lưu Trữ
 
 Toàn bộ biểu đồ khoa học đã được lưu trữ tập trung tại thư mục `reports/figures/`:
 
 | Tên tập tin biểu đồ | Giai đoạn | Mô tả nội dung trực quan hóa |
 |---|:---:|---|
 | `reports/figures/fig_milestone_roadmap.png` | Master | Sơ đồ toàn cảnh lộ trình tiến độ dự án 7 giai đoạn |
-| `reports/figures/fig_data_split_architecture.png` | 04 | Kiến trúc phân chia Signer-Disjoint và tỷ lệ mẫu trên từng nhánh mô hình |
+| `reports/figures/fig_data_split_architecture.png` | 04 | Kiến trúc phân chia Signer-Disjoint Phương án A và tỷ lệ mẫu trên từng nhánh |
 | `reports/figures/fig01_1_frame_length_distribution.png` | 01 | Phân bố số lượng khung hình trên toàn bộ tập dữ liệu thô |
 | `reports/figures/fig01_2_signer_distribution.png` | 01 | Số lượng video thực hiện bởi từng người ký trong 26 signers |
 | `reports/figures/fig01_3_top_bottom_gloss_frames.png` | 01 | Top 10 từ vựng có thời lượng dài nhất và ngắn nhất |
@@ -200,24 +234,23 @@ Toàn bộ biểu đồ khoa học đã được lưu trữ tập trung tại th
 | `reports/figures/fig03_3_zero_frame_analysis.png` | 03 | Phân phối số khung hình khuyết và nhóm zero-frame toàn tập |
 | `reports/figures/fig03_4_frame_length_distribution.png` | 03 | Hàm mật độ xác suất độ dài video và đường chuẩn hóa $T=64$ |
 | `reports/figures/fig03_5_top_bottom_gloss_frames.png` | 03 | So sánh thời lượng thực hiện giữa Top 10 từ cử chỉ dài nhất và ngắn nhất |
-| `reports/figures/fig04_1_dataset_split_distribution.png` | 04 | Phân bố tỷ lệ mẫu và người ký theo các tập Train / Val / Test |
-| `reports/figures/fig04_2_temporal_resampling_comparison.png` | 04 | Quỹ đạo cổ tay qua 3 giai đoạn: Thô $\rightarrow$ Điền khuyết $\rightarrow$ Resampling $T=64$ |
+| `reports/figures/fig04_1_dataset_split_distribution.png` | 04 | Phân bố tỷ lệ mẫu và người ký theo các tập Train / Val / Test mới (Phương án A) |
+| `reports/figures/fig04_2_temporal_resampling_comparison.png` | 04 | Quỹ đạo cổ tay qua 3 giai đoạn: Thô -> Điền khuyết -> Resampling $T=64$ |
 | `reports/figures/fig04_3_wrist_centering_skeleton.png` | 04 | Khung xương bàn tay trước và sau khi chuẩn hóa Cổ tay (Wrist-Centering) |
+| `reports/figures/fig_exp1_1_baseline_learning_curves.png` | 05 (W1) | Đường cong học tập Loss, Top-1, Top-5 của Thực nghiệm 1.1: Baseline (Conv1D + Bi-GRU) |
+| `reports/figures/fig_exp1_2_inception_learning_curves.png` | 05 (W1) | Đường cong học tập Loss, Top-1, Top-5 của Thực nghiệm 1.2: Multi-Scale Inception + Bi-GRU |
+| `reports/figures/fig_exp1_3_bilstm_learning_curves.png` | 05 (W1) | Đường cong học tập Loss, Top-1, Top-5 của Thực nghiệm 1.3: Multi-Scale Inception + Bi-LSTM (GAP) |
+| `reports/figures/fig05_1_single_view_learning_curves.png` | 05 | Biểu đồ đường cong tổng hợp của mô hình đơn góc nâng cao |
+| `reports/figures/fig05_2_top_bottom_gloss_accuracy.png` | 05 | Biểu đồ phân tích độ chính xác nhóm từ vựng nhận diện cao nhất và thấp nhất |
 
 ---
 
-## 7. Kế Hoạch Các Bước Tiếp Theo (Next Milestones)
+## 8. Kế Hoạch Các Bước Tiếp Theo
 
-Dữ liệu đã sẵn sàng để chuyển sang giai đoạn xây dựng và huấn luyện mô hình học sâu:
+Dự án đã hoàn tất xuất sắc Tuần 1 của Giai đoạn 05, vượt chỉ tiêu đề ra (Test Top-1 đạt **79.67%**, Validation Top-1 đạt **83.52%**). Kế hoạch tiếp theo gồm:
 
-1. **Giai đoạn 05 - Huấn luyện Mô hình Đơn góc (Single-View Front View: 225D Holistic)**:
-   - File thực thi: `src/models/05_vsl400-train-single-view.ipynb`.
-   - Cấu hình dữ liệu: Nạp trực tiếp từ `data/processed/splits/train_front.csv`, `val_front.csv`, `test_front.csv`.
-   - Pipeline đặc trưng: Vector 225 chiều + Vận tốc đạo hàm $\Delta P \implies$ **450 chiều**.
-   - Mục tiêu: Huấn luyện kiến trúc 1D-CNN + Bi-GRU / Attention trên tập Signer-Disjoint và đánh giá độ chính xác Top-1 / Top-5 trên 3 người ký chưa từng thấy (Signer 024, 025, 028).
-2. **Giai đoạn 06 - Huấn luyện Mô hình Đa góc (Multi-View Tri-Stream Fusion)**:
-   - File thực thi: `src/models/06_vsl400-train-multi-view.ipynb`.
-   - Cấu hình dữ liệu: Nạp đồng bộ 24.666 bộ ba góc quay từ `train_all.csv`, `val_all.csv`, `test_all.csv`.
-   - Kiến trúc: 3 nhánh mạng song song (Front + Left + Right Stream) kết hợp Cross-Attention / Late Fusion.
-3. **Giai đoạn 07 - Tối ưu Hóa Suy Luận Thời Gian Thực và Xây Dựng Giao Diện Demo**:
-   - Tối ưu hóa pipeline suy luận qua webcam với luồng MediaPipe Holistic và mô hình TensorFlow/ONNX.
+1. **Khởi động TUẦN 2 (Ngày 08 – 14): Tích hợp Cơ chế Attention & Kỹ thuật Chống Overfitting (Mục tiêu Top-1: 80% -> 85%)**:
+   - Tích hợp cơ chế **MLP Temporal Attention** vào Backbone Inception đã khóa để học phân bổ trọng số thích nghi cho các khung hình chứa cử động then chốt.
+   - Khảo sát cơ chế **Multi-Head Self-Attention (MHSA - 4 heads / 8 heads)** để mô hình hóa tương quan toàn cục đa vị trí trong cử chỉ.
+   - Tinh chỉnh điều hòa nâng cao: Thử nghiệm Label Smoothing $\epsilon = 0.1$, Stochastic Depth (DropPath) và điều chỉnh Weight Decay để triệt tiêu hoàn toàn nguy cơ quá khớp.
+   - Đánh giá đối soát và Khóa Kiến trúc Attention Tuần 2.

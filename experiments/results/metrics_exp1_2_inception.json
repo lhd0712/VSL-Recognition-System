@@ -1,0 +1,14 @@
+{
+    "experiment": "inception",
+    "model_name": "vsl400_exp1_2_inception",
+    "total_params": 762512,
+    "epochs_trained": 100,
+    "best_epoch": 92,
+    "best_val_loss": 1.4934099912643433,
+    "best_val_top_1_acc": 0.8284090757369995,
+    "best_val_top_5_acc": 0.9536932110786438,
+    "test_loss": 1.4930120706558228,
+    "test_top_1_acc": 0.7967337369918823,
+    "test_top_5_acc": 0.9565470814704895,
+    "elapsed_min": 75.66804465850194
+}
