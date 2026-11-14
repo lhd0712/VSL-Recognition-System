@@ -1,0 +1,14 @@
+{
+    "experiment": "baseline",
+    "model_name": "vsl400_exp1_1_baseline",
+    "total_params": 404688,
+    "epochs_trained": 100,
+    "best_epoch": 96,
+    "best_val_loss": 1.765151023864746,
+    "best_val_top_1_acc": 0.7400568127632141,
+    "best_val_top_5_acc": 0.9326704740524292,
+    "test_loss": 1.7806496620178223,
+    "test_top_1_acc": 0.7072032690048218,
+    "test_top_5_acc": 0.9259259104728699,
+    "elapsed_min": 40.1121586283048
+}

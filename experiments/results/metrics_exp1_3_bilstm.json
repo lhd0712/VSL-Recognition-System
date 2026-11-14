@@ -1,0 +1,14 @@
+{
+    "experiment": "bilstm",
+    "model_name": "vsl400_exp1_3_bilstm",
+    "total_params": 860304,
+    "epochs_trained": 100,
+    "best_epoch": 99,
+    "best_val_loss": 1.4434744119644165,
+    "best_val_top_1_acc": 0.8352272510528564,
+    "best_val_top_5_acc": 0.9576704502105712,
+    "test_loss": 1.5467866659164429,
+    "test_top_1_acc": 0.794109046459198,
+    "test_top_5_acc": 0.9445902705192566,
+    "elapsed_min": 92.72782275279363
+}

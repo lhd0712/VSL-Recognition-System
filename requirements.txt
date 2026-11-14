@@ -9,7 +9,7 @@ opencv-python==4.10.0.84
 Pillow>=10.0.0
 
 # --- MediaPipe: Trich xuat landmark ban tay ---
-mediapipe==0.10.14
+mediapipe==0.10.35
 
 # --- Deep Learning ---
 tensorflow==2.16.1          # Bao gom Keras 3, ho tro CPU + GPU (CUDA 12)

@@ -183,3 +183,5 @@ cython_debug/
 README.md
 *.npy
 /test
+/.vscode
+/data/external_videos
