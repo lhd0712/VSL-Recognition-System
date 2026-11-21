@@ -1,0 +1,20 @@
+{
+    "experiment": "cosine_swa",
+    "model_name": "vsl400_exp2_2_cosine_swa",
+    "total_params": 795536,
+    "epochs_trained": 100,
+    "best_epoch": 90,
+    "best_val_loss": 1.397348403930664,
+    "best_val_top_1_acc": 0.8542613387107849,
+    "best_val_top_5_acc": 0.9605113863945008,
+    "test_loss_best": 1.4356908798217773,
+    "test_top_1_best": 0.827354907989502,
+    "test_top_5_best": 0.9612131714820862,
+    "test_loss_swa": 1.437530755996704,
+    "test_top_1_swa": 0.8226888179779053,
+    "test_top_5_swa": 0.960338294506073,
+    "test_loss": 1.4356908798217773,
+    "test_top_1_acc": 0.827354907989502,
+    "test_top_5_acc": 0.9612131714820862,
+    "elapsed_min": 93.11820853153864
+}

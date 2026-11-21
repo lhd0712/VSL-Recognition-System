@@ -1,0 +1,296 @@
+{
+    "model": "vsl400_exp2_attention",
+    "test_samples": 3429,
+    "overall_accuracy": 0.8066491688538933,
+    "accuracy_distribution": {
+        "100%": 142,
+        "80% - 99%": 86,
+        "60% - 79%": 117,
+        "40% - 59%": 32,
+        "< 40%": 23
+    },
+    "hard_glosses_top25": [
+        {
+            "id": 43,
+            "gloss": "Chú ý",
+            "total_samples": 8,
+            "correct": 1,
+            "accuracy": 0.125
+        },
+        {
+            "id": 296,
+            "gloss": "Tháng chín",
+            "total_samples": 8,
+            "correct": 2,
+            "accuracy": 0.25
+        },
+        {
+            "id": 174,
+            "gloss": "Màu tím",
+            "total_samples": 8,
+            "correct": 2,
+            "accuracy": 0.25
+        },
+        {
+            "id": 304,
+            "gloss": "Tháng tám",
+            "total_samples": 8,
+            "correct": 2,
+            "accuracy": 0.25
+        },
+        {
+            "id": 318,
+            "gloss": "Thứ ba",
+            "total_samples": 8,
+            "correct": 2,
+            "accuracy": 0.25
+        },
+        {
+            "id": 321,
+            "gloss": "Thứ năm",
+            "total_samples": 8,
+            "correct": 2,
+            "accuracy": 0.25
+        },
+        {
+            "id": 322,
+            "gloss": "Thứ sáu",
+            "total_samples": 8,
+            "correct": 2,
+            "accuracy": 0.25
+        },
+        {
+            "id": 100,
+            "gloss": "Dơ",
+            "total_samples": 10,
+            "correct": 3,
+            "accuracy": 0.3
+        },
+        {
+            "id": 299,
+            "gloss": "Tháng mười hai",
+            "total_samples": 9,
+            "correct": 3,
+            "accuracy": 0.3333333333333333
+        },
+        {
+            "id": 300,
+            "gloss": "Tháng mười một",
+            "total_samples": 9,
+            "correct": 3,
+            "accuracy": 0.3333333333333333
+        },
+        {
+            "id": 117,
+            "gloss": "Giường",
+            "total_samples": 9,
+            "correct": 3,
+            "accuracy": 0.3333333333333333
+        },
+        {
+            "id": 310,
+            "gloss": "Thơm",
+            "total_samples": 12,
+            "correct": 4,
+            "accuracy": 0.3333333333333333
+        },
+        {
+            "id": 396,
+            "gloss": "Ướt",
+            "total_samples": 12,
+            "correct": 4,
+            "accuracy": 0.3333333333333333
+        },
+        {
+            "id": 231,
+            "gloss": "Nhạt",
+            "total_samples": 9,
+            "correct": 3,
+            "accuracy": 0.3333333333333333
+        },
+        {
+            "id": 327,
+            "gloss": "Tiếp tục",
+            "total_samples": 11,
+            "correct": 4,
+            "accuracy": 0.36363636363636365
+        },
+        {
+            "id": 309,
+            "gloss": "Thú vị",
+            "total_samples": 11,
+            "correct": 4,
+            "accuracy": 0.36363636363636365
+        },
+        {
+            "id": 323,
+            "gloss": "Thứ tư",
+            "total_samples": 8,
+            "correct": 3,
+            "accuracy": 0.375
+        },
+        {
+            "id": 301,
+            "gloss": "Tháng một",
+            "total_samples": 8,
+            "correct": 3,
+            "accuracy": 0.375
+        },
+        {
+            "id": 378,
+            "gloss": "Ăn",
+            "total_samples": 8,
+            "correct": 3,
+            "accuracy": 0.375
+        },
+        {
+            "id": 111,
+            "gloss": "Giày",
+            "total_samples": 8,
+            "correct": 3,
+            "accuracy": 0.375
+        },
+        {
+            "id": 337,
+            "gloss": "Trực thăng",
+            "total_samples": 8,
+            "correct": 3,
+            "accuracy": 0.375
+        },
+        {
+            "id": 320,
+            "gloss": "Thứ hai",
+            "total_samples": 8,
+            "correct": 3,
+            "accuracy": 0.375
+        },
+        {
+            "id": 106,
+            "gloss": "Dữ",
+            "total_samples": 8,
+            "correct": 3,
+            "accuracy": 0.375
+        },
+        {
+            "id": 152,
+            "gloss": "Không nên",
+            "total_samples": 10,
+            "correct": 4,
+            "accuracy": 0.4
+        },
+        {
+            "id": 246,
+            "gloss": "Nắng",
+            "total_samples": 12,
+            "correct": 5,
+            "accuracy": 0.4166666666666667
+        }
+    ],
+    "top_confused_pairs": [
+        {
+            "true_id": 246,
+            "true_gloss": "Nắng",
+            "pred_id": 188,
+            "pred_gloss": "Mùa hè",
+            "count": 7
+        },
+        {
+            "true_id": 310,
+            "true_gloss": "Thơm",
+            "pred_id": 231,
+            "pred_gloss": "Nhạt",
+            "count": 6
+        },
+        {
+            "true_id": 309,
+            "true_gloss": "Thú vị",
+            "pred_id": 277,
+            "pred_gloss": "Rửa tay",
+            "count": 6
+        },
+        {
+            "true_id": 152,
+            "true_gloss": "Không nên",
+            "pred_id": 237,
+            "pred_gloss": "Nên",
+            "count": 5
+        },
+        {
+            "true_id": 396,
+            "true_gloss": "Ướt",
+            "pred_id": 24,
+            "pred_gloss": "Bút bi",
+            "count": 5
+        },
+        {
+            "true_id": 300,
+            "true_gloss": "Tháng mười một",
+            "pred_id": 298,
+            "pred_gloss": "Tháng mười",
+            "count": 4
+        },
+        {
+            "true_id": 365,
+            "true_gloss": "Xôi",
+            "pred_id": 396,
+            "pred_gloss": "Ướt",
+            "count": 4
+        },
+        {
+            "true_id": 100,
+            "true_gloss": "Dơ",
+            "pred_id": 61,
+            "pred_gloss": "Con heo",
+            "count": 4
+        },
+        {
+            "true_id": 194,
+            "true_gloss": "Múa",
+            "pred_id": 151,
+            "pred_gloss": "Không nghe lời",
+            "count": 4
+        },
+        {
+            "true_id": 188,
+            "true_gloss": "Mùa hè",
+            "pred_id": 207,
+            "pred_gloss": "Nghe",
+            "count": 3
+        },
+        {
+            "true_id": 299,
+            "true_gloss": "Tháng mười hai",
+            "pred_id": 300,
+            "pred_gloss": "Tháng mười một",
+            "count": 3
+        },
+        {
+            "true_id": 17,
+            "true_gloss": "Bây giờ",
+            "pred_id": 236,
+            "pred_gloss": "Nhẹ",
+            "count": 3
+        },
+        {
+            "true_id": 327,
+            "true_gloss": "Tiếp tục",
+            "pred_id": 277,
+            "pred_gloss": "Rửa tay",
+            "count": 3
+        },
+        {
+            "true_id": 201,
+            "true_gloss": "Mẹ",
+            "pred_id": 80,
+            "pred_gloss": "Cô",
+            "count": 3
+        },
+        {
+            "true_id": 3,
+            "true_gloss": "Buổi chiều",
+            "pred_id": 22,
+            "pred_gloss": "Bóng đá",
+            "count": 3
+        }
+    ]
+}

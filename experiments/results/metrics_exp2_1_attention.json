@@ -1,0 +1,14 @@
+{
+    "experiment": "attention",
+    "model_name": "vsl400_exp2_1_attention",
+    "total_params": 795536,
+    "epochs_trained": 87,
+    "best_epoch": 77,
+    "best_val_loss": 1.453304886817932,
+    "best_val_top_1_acc": 0.8414772748947144,
+    "best_val_top_5_acc": 0.9573863744735718,
+    "test_loss": 1.4941576719284058,
+    "test_top_1_acc": 0.8066491484642029,
+    "test_top_5_acc": 0.9547973275184631,
+    "elapsed_min": 91.60501141945521
+}
