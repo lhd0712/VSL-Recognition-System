@@ -1,0 +1,78 @@
+{
+  "model_name": "vsl400_single_view_front_best",
+  "checkpoint_source": "experiments/checkpoints/vsl400_exp2_cosine_best.keras",
+  "architecture": "Multi-Scale Inception 1D-CNN + 1-Layer Bi-GRU + MLP Temporal Attention",
+  "total_parameters": 795536,
+  "input_shape": [
+    64,
+    450
+  ],
+  "training_scheme": "CosineDecayWithWarmup + SWA + Class-weighted Loss (1.8x on Top 25 Hard Glosses)",
+  "dataset": "VSL400 Front-View (Signer-Disjoint)",
+  "test_samples_total": 3429,
+  "overall_metrics": {
+    "test_top_1_acc": 82.74,
+    "test_top_5_acc": 96.12,
+    "test_loss": 1.4357
+  },
+  "signer_breakdown": {
+    "008": {
+      "signer_id": "008",
+      "part": 2,
+      "samples": 815,
+      "top_1": 91.66,
+      "top_5": 99.63
+    },
+    "016": {
+      "signer_id": "016",
+      "part": 4,
+      "samples": 856,
+      "top_1": 88.43,
+      "top_5": 98.25
+    },
+    "024": {
+      "signer_id": "024",
+      "part": 6,
+      "samples": 1758,
+      "top_1": 75.82,
+      "top_5": 93.46
+    }
+  },
+  "temporal_bracket_breakdown": {
+    "Ngan (<45)": {
+      "samples": 69,
+      "top_1": 72.46,
+      "top_5": 91.3
+    },
+    "Trung binh (45-75)": {
+      "samples": 2895,
+      "top_1": 81.59,
+      "top_5": 95.79
+    },
+    "Dai (>75)": {
+      "samples": 465,
+      "top_1": 91.4,
+      "top_5": 98.92
+    }
+  },
+  "latency_benchmark_ms": {
+    "mean_ms": 5.6,
+    "median_ms": 5.38,
+    "p95_ms": 7.52,
+    "p99_ms": 8.19,
+    "throughput_fps": 178.7,
+    "evaluation_mode": "Single-sample streaming (batch_size=1) with @tf.function"
+  },
+  "gloss_accuracy_distribution": {
+    "exact_100_percent_glosses": 149,
+    "greater_equal_80_percent_glosses": 251,
+    "greater_equal_50_percent_glosses": 380,
+    "less_than_50_percent_glosses": 20
+  },
+  "hardware_specification": {
+    "cpu": "AMD Ryzen 5 5500U with Radeon Graphics (6 Cores / 12 Threads)",
+    "gpu": "NVIDIA GeForce GTX 1650 (4GB VRAM)",
+    "ram": "12 GB RAM",
+    "os": "Windows 11 (64-bit)"
+  }
+}
